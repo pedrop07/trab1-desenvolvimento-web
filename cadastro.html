@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<div class="container">
+  
+    <div class="title">Cadastro</div>
+    <form action="#">
+      <div class="user__details">
+        <div class="input__box">
+          <span class="details">Nome completo</span>
+          <input type="text" placeholder="Insira seu nome completo" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Nome do perfil</span>
+          <input type="text" placeholder="Insira seu nome de perfil" required>
+        </div>
+        <div class="input__box">
+          <span class="details">E-mail</span>
+          <input type="email" placeholder="Insira seu e-mail" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Número de telefone</span>
+          <input type="tel" pattern="[0-9]{2}[0-9]{5}[0-9]{4}" placeholder="Número de celular com DDD" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Senha</span>
+          <input type="password" placeholder="********" required>
+        </div>
+        <div class="input__box">
+          <span class="details">Confirmar senha</span>
+          <input type="password" placeholder="********" required>
+        </div>
+  
+      </div>
+      <div class="gender__details">
+        <input type="radio" name="gender" id="dot-1">
+        <input type="radio" name="gender" id="dot-2">
+        <input type="radio" name="gender" id="dot-3">
+        <span class="gender__title">Gênero</span>
+        <div class="category">
+          <label for="dot-1">
+            <span class="dot one"></span>
+            <span>Masculino</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span>Feminino</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span>Outros</span>
+          </label>
+        </div>
+      </div>
+      <div class ="checkbox__details">
+        <input type="checkbox" id="check-1" name="check-1" value="news">
+        <label for="news"> Eu quero receber novidades por e-mail</label><br>
+        <input type="checkbox" id="check-2" name="check-2" value="termos">
+        <label for="termos"> Eu concordo com os termos e condições de uso</label><br>
+      </div>
+      <div class="button">
+        <input type="submit" value="Registrar-se">
+      </div>
+    </form>
+  </div>
+</html>
